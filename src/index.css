@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background:
+    radial-gradient(
+      1000px circle at 10% 10%,
+      rgba(56, 189, 248, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px circle at 90% 25%,
+      rgba(168, 85, 247, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px circle at 50% 100%,
+      rgba(34, 197, 94, 0.12),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #020617 0%, #0b1220 100%);
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.ai-stop-logo {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px #fee2e2;
+  animation: ai-stop-pulse 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes ai-stop-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.ai-chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #475569 transparent;
+}
+
+.ai-chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ai-chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ai-chat-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #64748b, #1d4ed8);
+  border-radius: 999px;
+}
+
+.ai-chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #94a3b8, #2563eb);
+}
+
