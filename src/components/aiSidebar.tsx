@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect, FormEvent } from 'react';
-
+import { useState, useRef, useEffect } from 'react';
+import type { FormEvent } from 'react';
 const TYPING_INTERVAL = 10; // скорость "печати" ответа AI (меньше = быстрее)
 
 interface Message {
