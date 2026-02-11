@@ -13,7 +13,7 @@ export default function ChatSidebar() {
   const [loading, setLoading] = useState(false);
   const [typingMessage, setTypingMessage] = useState<string | null>(null);
   const [typingIndex, setTypingIndex] = useState(0);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const chatRef = useRef<HTMLDivElement>(null);
   const recognitionRef = useRef<any | null>(null);
